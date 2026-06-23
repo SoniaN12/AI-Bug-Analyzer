@@ -28,7 +28,7 @@ Start the Server:
 ```bash
 uvicorn app.main:app --reload
 ```
-Opening Swagger UI:
+ Then open this  browser  page to laod Swagger UI:
 ```bash
 http://127.0.0.1:8000/docs
 ```
