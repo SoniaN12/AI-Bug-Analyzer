@@ -12,8 +12,8 @@ Python Dotenv
 # Installation.
 1. Clone the repository.
 ```bash
-git clone <repository-url>
-cd ai-bug-analyzer
+git clone <https://github.com/SoniaN12/AI-Bug-Analyzer.git>
+cd AI-Bug-Analyzer
 ```
 2. Install dependencies
 ```bash
@@ -31,6 +31,23 @@ uvicorn app.main:app --reload
 Opening Swagger UI:
 ```bash
 http://127.0.0.1:8000/docs
+```
+Example
+```JSON
+{
+  "title": "Users can log in with wrong password",
+  "description": "Authentication succeeds unexpectedly.",
+  "language": "Java",
+  "error_logs": "",
+  "code": "if password == password:\n    return True"
+}
+```
+Example Response
+```JSON
+{
+  "success": true,
+  "gemini_response": "This is a **critical security vulnerability** with a straightforward root cause.....
+}
 ```
 # How it works
 1. User submits a bug report.
